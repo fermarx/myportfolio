@@ -8,57 +8,59 @@
 </head>
 <body>
 	<header>
-		<h1>My Portfolio</h1>
-		<nav>
-			<ul>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="#projects">My Projects</a></li>
-				<li><a href="#contact">Contact Me</a></li>
-			</ul>
-		</nav>
-	</header>
+	<h1>My Portfolio</h1>
+	<nav>
+	<ul>
+		<li><a href="#about-me">About Me</a></li>
+		<li><a href="#my-projects">My Projects</a></li>
+		<li><a href="#contact-me">Contact Me</a></li>
+	</ul>
+	</nav>
+  	</header>
 	<main>
-		<section id="about">
-			<h2>About Me</h2>
-			<p>As a recent Computer Science graduate, I possess a strong passion for technology and problem-solving skills that make me an excellent candidate for a challenging and dynamic role. 
-			During my studies, I gained experience in various programming languages, including Java, Python, and C++, and worked on group projects that honed my teamwork and communication skills. 
-			Additionally, my experience as an Erasmus+ exchange student in Norway allowed me to develop cultural awareness and adaptability. 
-			My Bachelor's final thesis project involved utilizing my skills and knowledge to contribute to projects that can make a positive impact. I am eager to begin my career and bring my knowledge and enthusiasm to a company that values innovation, collaboration, and growth.
-			</p>
-		</section>
-		<section id="projects">
-			<h2>My Projects</h2>
-			<ul>
-				<li>
-					<h3>Bachelor's Final Thesis</h3>
-					<p>This project is driven by a passion for plants and gardening and a desire to find a solution to struggles with keeping plants alive. I started having an Arduino in my house and me not knowing what I could do for my bachelor’s final thesis, so I came up with this project with the goal is to improve the success rate of gardening by accurately monitoring and controlling growing conditions, making it easier for people to grow and care for their plants. 
-          Project’s Description: Design and implementation of a personal climate control system for plants using cloud computing and IoT technologies, with the aim of accurately monitoring and controlling the growing conditions of plants in a personal greenhouse.
-          </p>
-					<a href="https://github.com/fermarx/Thesis-TFG" target="_blank" rel="noopener noreferrer">View Project</a>
-				</li>
-				<li>
-					<h3>Computer Software Consultant Student Intern</h3>
-					<p>New Technologies consultant working with BBVA (Spanish Bank). It was 30% work from home. I was working with 2 other people from MS (my project manager and a junior) creating the connection to the API. 
-          From BBVA there were 7 people (from different parts of the project) and there was another person from Deloitte doing QA.
-          Project’s Description: Assisted in the migration of a fraud detection app to the cloud for a Spanish bank. Responsible for connecting to the API of the bank and optimizing the calls creating a class and using pycurl.
-          </p>
-					<!--<a href="#">View Project</a>-->
-				</li>
-			</ul>
-		</section>
-		<section id="contact">
-			<h2>Contact Me</h2>
-			<form>
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name"><br>
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email"><br>
-				<label for="message">Message:</label>
-				<textarea id="message" name="message"></textarea><br>
-				<button type="submit">Send Message</button>
-			</form>
-		</section>
+	<section id="about-me" class="tab">
+		<h2>About Me</h2>
+		
+		<p>As a recent Computer Science graduate, I possess a strong passion for technology and problem-solving skills that make me an excellent candidate for a challenging and dynamic role. 
+		During my studies, I gained experience in various programming languages, including Java, Python, and C++, and worked on group projects that honed my teamwork and communication skills. 
+		Additionally, my experience as an Erasmus+ exchange student in Norway allowed me to develop cultural awareness and adaptability. 
+		My Bachelor's final thesis project involved utilizing my skills and knowledge to contribute to projects that can make a positive impact. I am eager to begin my career and bring my knowledge and enthusiasm to a company that values innovation, collaboration, and growth.
+		</p>
+	</section>
+	<section id="my-projects" class="tab">
+	<h2>My Projects</h2>
+	<ul>
+	<li>
+		<h3>Bachelor's Final Thesis</h3>
+		<p>This project is driven by a passion for plants and gardening and a desire to find a solution to struggles with keeping plants alive. I started having an Arduino in my house and me not knowing what I could do for my bachelor’s final thesis, so I came up with this project with the goal is to improve the success rate of gardening by accurately monitoring and controlling growing conditions, making it easier for people to grow and care for their plants. 
+		Project’s Description: Design and implementation of a personal climate control system for plants using cloud computing and IoT technologies, with the aim of accurately monitoring and controlling the growing conditions of plants in a personal greenhouse.
+		</p>
+		<a href="https://github.com/fermarx/Thesis-TFG" target="_blank" rel="noopener noreferrer">View Project</a>
+	</li>
+	<li>
+		<h3>Computer Software Consultant Student Intern</h3>
+		<p>New Technologies consultant working with BBVA (Spanish Bank). It was 30% work from home. I was working with 2 other people from MS (my project manager and a junior) creating the connection to the API. 
+		From BBVA there were 7 people (from different parts of the project) and there was another person from Deloitte doing QA.
+		Project’s Description: Assisted in the migration of a fraud detection app to the cloud for a Spanish bank. Responsible for connecting to the API of the bank and optimizing the calls creating a class and using pycurl.
+		</p>
+		<!--<a href="#">View Project</a>-->
+	</li>
+	</ul>
+	</section>
+	<section id="contact-me" class="tab">
+	<h2>Contact Me</h2>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br>
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea><br>
+		<button type="submit">Send Message</button>
+	</form>
+	</section>
 	</main>
+	<script src="main.js"></script>
 	<footer>
 		<p>&copy; 2023 My Portfolio</p>
 	</footer>
