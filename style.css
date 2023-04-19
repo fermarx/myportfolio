@@ -113,3 +113,35 @@ form button {
 form button:hover {
 	background-color: #0056b3;
 }
+
+/* Tab styles */
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+nav li.active a {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+  /* Make the navigation horizontal */
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li {
+    margin-right: 1em;
+  }
+
+  /* Center the navigation horizontally */
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+}
