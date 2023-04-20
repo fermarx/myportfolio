@@ -2,140 +2,277 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <title>Xiao Fernandez Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="container">
-    <h1>My Portfolio</h1>
-		<div>
+    <h1>Xiao Fernandez Portfolio</h1>
+		
+    <!--Adding the main tabs to the page-->
+    <div>
 			<div class="tab" onclick="showTab('about')">About Me</div>
 			<div class="tab" onclick="showTab('projects')">My Projects</div>
 			<div class="tab" onclick="showTab('contact')">Contact Me</div>
 		</div>
+
+    <!--About me-->
     <div id="about" class="content active">
       <h2>About Me</h2>
-      <p>Hello, my name is Xiao Fernandez and I am a recent graduate in Computer Science. I am passionate about programming and love to work on challenging projects that test my skills.
-      As a recent Computer Science graduate, I possess a strong passion for technology and problem-solving skills that make me an excellent candidate for a challenging and dynamic role. 
-		  During my studies, I gained experience in various programming languages, including Java, Python, and C++, and worked on group projects that honed my teamwork and communication skills. 
-		  Additionally, my experience as an Erasmus+ exchange student in Norway allowed me to develop cultural awareness and adaptability. 
-		  My Bachelor's final thesis project involved utilizing my skills and knowledge to contribute to projects that can make a positive impact. I am eager to begin my career and bring my knowledge and enthusiasm to a company that values innovation, collaboration, and growth.
-      </p>
+      <p><b>Who am I?</b> <br>
+      Hi! I am a 23-year-old girl from Spain called Sofia Xiao Fernandez Marin, preferably being called Xiao, and I am a recent graduate in Computer Science with hands-on experience in cloud computing, machine learning, and IoT, I am confident in my ability to excel in a role that would allow me to apply my skills and passion for innovation. <br>
+      As I just completed my Bachelor's degree, I am excited to apply my skills and experiences. I am a fast learner, always eager to discover new things, and have always enjoyed participating in group projects that can benefit others. I believe that I have a lot to offer and am eager to learn from experienced professionals. <br>
+		  During my studies, I gained experience in various programming languages, including Java, Python, and C++, and worked on group projects that honed my teamwork and communication skills.
+      I am passionate about programming and love to work on challenging projects that test my skills and I possess a strong passion for technology and problem-solving skills that make me an excellent candidate for a challenging and dynamic role. <br><br>
+
+      <b>Where did I study?</b><br>
+      I studied a Bilingual Bachelor's degree (half spanish half english) as Computer Science at the Universidad Autónoma de Madrid (UAM), where I recently graduated and completed my Bachelor's thesis project with a grade of 9.5/10. The project was a personal climate control system for plants in a personal greenhouse, utilizing cloud computing and IoT technologies to accurately monitor and control growing conditions. I am proud of the practical and effective solution developed, and the new knowledge I acquired through the project. <br>
+      I also did an internship where I worked on the migration of a bank's fraud detection system to the cloud, where I gained hands-on experience in cloud technology and machine learning implementation. I contributed to the migration process and implemented data transfer capabilities to improve the system's efficiency and security. <br>
+		  Additionally, my experience as an Erasmus+ exchange student at the Norwegian Univerity of Science and Technology (NTNU) in Trondheim, Norway, allowed me to develop cultural awareness and adaptability.<br><br>
+
+      <b>Why did I study Computer Science at UAM?</b><br>
+      Growing up, I had a passion for Computer Science that was sparked during a high school subject where I learned the basics of programming. I continued to cultivate this passion and eventually chose to pursue a Bachelor's degree in Computer Science, with the support of my family who recognized my creativity and problem-solving skills. I chose the UAM as it was the only university in Madrid that offered a english bachelors. <br><br>     
+
+      <b>Which are my passions?</b><br>
+      Despite my technical interests, I have always had a desire to explore different cultures and help people. In 2017, I participated in a volunteering program in Germany where I helped to restore a walking path in the forest and learned carpentry skills while meeting people from different parts of the world. I also volunteered for a food bank in Spain, encouraging people to donate food to families in need. <br>
+      In 2021, I gained valuable experience working as a hostess for Salesland, where I worked on different campaigns convincing customers to join the store club. This experience honed my customer service skills, my ability to communicate with diverse groups, and my outgoing personality. Additionally, I learned how to work with people from different backgrounds and became more open-minded. <br>
+		  </p>
     </div>
+    
+    <!--Projects-->
     <div id="projects" class="content">
+      <!--Adding the tabs to each catecory project-->
       <div>
 				<div class="tab" onclick="showCategory('all')">All Projects</div>
 				<div class="tab" onclick="showCategory('high')">Highlights</div>
-				<div class="tab" onclick="showCategory('ds')">DS Related</div>
-				<div class="tab" onclick="showCategory('network')">Network Related</div>
+				<div class="tab" onclick="showCategory('ml')">Machine Learning</div>
+				<div class="tab" onclick="showCategory('ds')">Data Science</div>
 			</div>
+
       <div id="all" class="category all" style="display:active">
 
             <!-- Projects -->
             <div class="project final-thesis all high">
               <h3>Bachelor's Final Thesis</h3>
-              <p><b>Context:</b> This project is driven by a passion for plants and gardening and a desire to find a solution to struggles with keeping plants alive. I started having an Arduino in my house and me not knowing what I could do for my bachelor's final thesis, so I came up with this project with the goal is to improve the success rate of gardening by accurately monitoring and controlling growing conditions, making it easier for people to grow and care for their plants. 
-              <br>
+              <p><b>Context:</b> This project is driven by a passion for plants and gardening and a desire to find a solution to struggles with keeping plants alive. I started having an Arduino in my house and me not knowing what I could do for my bachelor's final thesis, so I came up with this project with the goal is to improve the success rate of gardening by accurately monitoring and controlling growing conditions, making it easier for people to grow and care for their plants.<br>
               <b>Project's Description:</b> Design and implementation of a personal climate control system for plants using cloud computing and IoT technologies, with the aim of accurately monitoring and controlling the growing conditions of plants in a personal greenhouse.
               <a href="https://github.com/fermarx/Thesis-TFG" target="_blank" rel="noopener noreferrer">View Project</a>
-              
+              </p>
+
               <p class="task-list">
-                <b>Tasks:</b> <br>
-                 • Conducted research on the use of cloud computing and IoT technologies for personal gardening. <br>
-                 • Designed the architecture of the personal climate control system. <br>
-                 • Programmed the microcontroller (Arduino) to collect data from various sensors and communicate with the cloud platform. <br>
-                 • Conducted experiments to test the system's performance and accuracy. <br>
-                 • Conducted a literature review on the use of technology in agriculture. <br>
-                 • Selected appropriate sensors for monitoring temperature, humidity, soil moisture, and light intensity. <br>
-                 • Programmed the microcontroller to control fans, heaters, and lights based on the collected data. <br>
-                 • Developed an application using Python for the user being able to use the data. <br>
-                 • Wrote a report documenting the design, implementation, and evaluation of the system. <br><br>
+              <b>Tasks:</b> <br>
+                • Conducted research on the use of cloud computing and IoT technologies for personal gardening. <br>
+                • Designed the architecture of the personal climate control system. <br>
+                • Programmed the microcontroller (Arduino) to collect data from various sensors and communicate with the cloud platform. <br>
+                • Conducted experiments to test the system's performance and accuracy. <br>
+                • Conducted a literature review on the use of technology in agriculture. <br>
+                • Selected appropriate sensors for monitoring temperature, humidity, soil moisture, and light intensity. <br>
+                • Programmed the microcontroller to control fans, heaters, and lights based on the collected data. <br>
+                • Developed an application using Python for the user being able to use the data. <br>
+                • Wrote a report documenting the design, implementation, and evaluation of the system. <br><br>
 
-                 <b>Results:</b> The personal climate control system successfully monitored and controlled the growing conditions of plants, resulting in improved yields and increased efficiency. The project demonstrated the benefits of using cloud computing and IoT technology for personal gardening, such as cost savings and automation. The project also highlighted the importance of open-source software and low-cost hardware components for cost-effective implementation.<br>
-                 • The system was able to accurately monitor and control the growing conditions of plants, resulting in improved yields and increased efficiency. <br>
-                 • Successfully achieved all goals in designing and implementing the system. <br>
-                 • IoT and cloud computing technologies were employed to enable monitoring and a response mechanism. <br>
-                 • Cost-effective, easy-to-use, and highly functional system created.<br><br>
+                <b>Results:</b> The personal climate control system successfully monitored and controlled the growing conditions of plants, resulting in improved yields and increased efficiency. The project demonstrated the benefits of using cloud computing and IoT technology for personal gardening, such as cost savings and automation. The project also highlighted the importance of open-source software and low-cost hardware components for cost-effective implementation.<br>
+                • The system was able to accurately monitor and control the growing conditions of plants, resulting in improved yields and increased efficiency. <br>
+                • Successfully achieved all goals in designing and implementing the system. <br>
+                • IoT and cloud computing technologies were employed to enable monitoring and a response mechanism. <br>
+                • Cost-effective, easy-to-use, and highly functional system created.<br><br>
 
-                 <b>Languages, Scripting & Frameworks:</b> C++, Python, Arduino <br>
-                 <b>Operating system & Tools:</b> Arduino IDE, Azure Portal, MySQL Server <br>
-                 <b>Database:</b> MySQL Server <br>
-                 <b>Working methodology:</b> Kanban <br><br>
+                <b>Languages, Scripting & Frameworks:</b> C++, Python, Arduino <br>
+                <b>Operating system & Tools:</b> Arduino IDE, Azure Portal, MySQL Server <br>
+                <b>Database:</b> MySQL Server <br>
+                <b>Working methodology:</b> Kanban <br><br>
               </p>
             </div>                
 
-
-            <div class="project internship all pyhton">
+            <div class="project internship all">
               <h3>Computer Software Consultant Student Intern</h3>
               <p><b>Context:</b> New Technologies consultant working with BBVA (Spanish Bank). It was 30% work from home. I was working with 2 other people from MS (my project manager and a junior) creating the connection to the API. 
-              From BBVA there were 7 people (from different parts of the project) and there was another person from Deloitte doing QA.
-              <br>
+              From BBVA there were 7 people (from different parts of the project) and there was another person from Deloitte doing QA.<br>
               <b>Project's Description:</b> Assisted in the migration of a fraud detection app to the cloud for a Spanish bank. Responsible for connecting to the API of the bank and optimizing the calls creating a class and using pycurl.
               </p>
+
               <p class="task-list">
-                <b>Tasks:</b> <br>
-                 • Connecting to the API of the bank. <br>
-                 • Optimizing the calls using pycurl. At first, they asked me to do it in VBA, but I suggested the idea of python, as I had a better knowledge of this language.<br>
-                 • Collaboration with international teams through weekly meetings. <br><br>
+              <b>Tasks:</b> <br>
+                • Connecting to the API of the bank. <br>
+                • Optimizing the calls using pycurl. At first, they asked me to do it in VBA, but I suggested the idea of python, as I had a better knowledge of this language.<br>
+                • Collaboration with international teams through weekly meetings. <br><br>
 
-                 <b>Results:</b> <br>
-                 • Improved the efficiency and reliability of the API calls, contributing to the successful migration of the fraud detection app to the cloud.<br>
-                 • Communication and collaboration skills by working with a diverse team of professionals from around the world and coordinating our efforts and ensuring that the project was moving forward smoothly. <br><br>
+                <b>Results:</b> <br>
+                • Improved the efficiency and reliability of the API calls, contributing to the successful migration of the fraud detection app to the cloud.<br>
+                • Communication and collaboration skills by working with a diverse team of professionals from around the world and coordinating our efforts and ensuring that the project was moving forward smoothly. <br><br>
 
-                 <b>Languages, Scripting & Frameworks:</b> Python, pycurl, API Connection <br>
-                 <b>Operating system & Tools:</b> Windows, Linux Terminal <br>
-                 <b>Database:</b> AWS <br>
-                 <b>Working methodology:</b> Agile <br><br>
+                <b>Languages, Scripting & Frameworks:</b> Python, pycurl, API Connection <br>
+                <b>Operating system & Tools:</b> Windows, Linux Terminal <br>
+                <b>Database:</b> AWS <br>
+                <b>Working methodology:</b> Agile <br><br>
               </p>
-              <br>
             </div>
 
-
-            <div class="project faa all ds">
+            <div class="project faa all ml">
               <h3>Fundamentos de Aprendizaje Automatico </h3>
-                <p><b>Context:</b> I learnt about the Fundamentals of Machine Learning. As with every course at my home university (UAM), I had the theoretical and the laboratory part. All the lab part was done by pairs.
-                <br>
-                <b>Project's Description:</b> We studied how different ML algorithms worked on paper and after each class, we had to program some algorithms. Naive Bayes, Nearest Neighbors and k-means, logistic regression and ROC analysis and genetic algorithms are the ones we had to program and compare our results with sklearn, as well as we learnt about linear models and neural networks.
-                <a href="https://github.com/fermarx/UAM-projects/tree/main/FAA" target="_blank" rel="noopener noreferrer">View Project</a>
-                
-                <p class="task-list">
-                  <b>Tasks:</b> : In both cases we worked the 2h/week when we had in class with our professor there and could answer some questions if we had. If we did not finish in those 2h (because of the explanation of the lab or so), we finish the project at our hose, using VSCode and github trying to find a timeslot where both of us could work together, if not, each one would to a bit and then the other would check on the code.<br>
-                   • Elaborating and program in Python different ML algorithms and compare our results with SKLearn. <br><br>
-  
-                   <b>Results:</b> As a result, we passed the projects for each course, as well as each one of the team passed the theoretical part, that was an individual exam.<br>
-                   • Leant data science methods, technologies and algorithms. <br>
-                   • Skills in setting up and configuring data science tools. <br><br>
-  
-                   <b>Languages, Scripting & Frameworks:</b> Python <br>
-                   <b>Operating system & Tools:</b> Windows <br>
-                   <b>Database:</b> - <br>
-                   <b>Working methodology:</b> Agile <br><br>
-                </p>
-              </div>   
+              <p><b>Context:</b> I learnt about the Fundamentals of Machine Learning. As with every course at my home university (UAM), I had the theoretical and the laboratory part. All the lab part was done by pairs.<br>
+              <b>Project's Description:</b> We studied how different ML algorithms worked on paper and after each class, we had to program some algorithms. Naive Bayes, Nearest Neighbors and k-means, logistic regression and ROC analysis and genetic algorithms are the ones we had to program and compare our results with sklearn, as well as we learnt about linear models and neural networks.
+              <a href="https://github.com/fermarx/UAM-projects/tree/main/FAA" target="_blank" rel="noopener noreferrer">View Project</a>
+              </p>
+
+              <p class="task-list">
+              <b>Tasks:</b> We worked the 2h/week when we had in class with our professor there and could answer some questions if we had. If we did not finish in those 2h (because of the explanation of the lab or so), we finish the project at our hose, using VSCode and github trying to find a timeslot where both of us could work together, if not, each one would to a bit and then the other would check on the code.<br>
+                • Elaborating and program in Python different ML algorithms and compare our results with SKLearn. <br><br>
+
+                <b>Results:</b> As a result, we passed the projects for each course, as well as each one of the team passed the theoretical part, that was an individual exam.<br>
+                • Leant data science methods, technologies and algorithms. <br>
+                • Skills in setting up and configuring data science tools. <br><br>
+
+                <b>Languages, Scripting & Frameworks:</b> Python <br>
+                <b>Operating system & Tools:</b> Windows <br>
+                <b>Database:</b> - <br>
+                <b>Working methodology:</b> Agile <br><br>
+              </p> 
             </div>
 
-            <div class="project appliedDS all network">
-              <h3>Redes Project</h3>
-              <p>Description of Redes project</p>
+            <div class="project appliedDS all ml ds">
+              <h3>Applied Data Science</h3>
+              <p><b>Context:</b> Course taken at NTNU, we had to complete a group project and an individual one.<br>
+              <b>Project's Description:</b> As a group, develop skills in configuring the relevant tools/ technologies, pre-processing of data and conducting the analytics.
+              <a href="https://github.com/fermarx/NTNU-Projects/tree/main/applied%20data%20science" target="_blank" rel="noopener noreferrer">View Project</a>
+              </p>
+
+              <p class="task-list">
+              <b>Tasks:</b> In both cases we worked the 2h/week when we had in class with our professor there and could answer some questions if we had. If we did not finish in those 2h (because of the explanation of the lab or so), we finish the project at our hose, using VSCode and github trying to find a timeslot where both of us could work together, if not, each one would to a bit and then the other would check on the code.<br>
+                • Elaborating and program in Python different ML algorithms and compare our results with SKLearn. <br><br>
+
+                <b>Results:</b><br>
+                •	Skills in setting up and configuring data science tools.<br>
+                •	Identifying what methods are appropriate for what type of problems.<br>
+                •	Preparing and pre-processing data for input. <br><br>
+
+                <b>Languages, Scripting & Frameworks:</b> Python <br>
+                <b>Operating system & Tools:</b> Windows <br>
+                <b>Database:</b> - <br>
+                <b>Working methodology:</b> Agile <br><br>
+              </p>
+            </div>
+
+            <div class="project ai all ml">
+              <h3>Artificial Intelligence</h3>
+              <p><b>Context:</b> Course with theoretical and the laboratory part. All the lab part was done by pairs. <br>
+              <b>Project's Description:</b> The goal of this course was to introduce us to AI. We learnt the basics of every algorithm. After this course, we had the one above, an optional course. Here we had to program a different project for each topic of the course. The first one was a pacman maze using min-max alpha strategy, alpha/beta pruning, the second one was to resolve the eight queens' problem using Prolog and the last one was about predictions using sklearn.
+              <a href="https://github.com/fermarx/NTNU-Projects/tree/main/applied%20data%20science" target="_blank" rel="noopener noreferrer">View Project</a>
+              </p>
+
+              <p class="task-list">
+              <b>Tasks:</b>We worked the 2h/week when we had in class with our professor there and could answer some questions if we had. If we did not finish in those 2h (because of the explanation of the lab or so), we finish the project at our hose, using VSCode and github trying to find a timeslot where both of us could work together, if not, each one would to a bit and then the other would check on the code.<br>
+                • Learn about various machine learning techniques such as linear regression, logistic regression, and decision trees.<br>
+                • Elaborating and program in Python different ML algorithms and compare our results with SKLearn. <br><br>
+
+                <b>Results:</b><br>
+                •	Leant data science methods, technologies and algorithms.<br>
+                •	Skills in setting up and configuring data science tools. <br><br>
+
+                <b>Languages, Scripting & Frameworks:</b> Python <br>
+                <b>Operating system & Tools:</b> Windows <br>
+                <b>Database:</b> - <br>
+                <b>Working methodology:</b> Agile <br><br>
+              </p>
+            </div>
+
+            <div class="project dataos all ds">
+              <h3> Inmersion de datos ALURA</h3>
+              <p><b>Context: Courses I took as a first contact with the data world, we had a discord channel with voice channels where we can enter or ask questions on each different chat.  </b> <br>
+              <b>Project's Description: I took it as an introduction to the data world. We used SKLearn, ML,... </b>
+              <a href="https://github.com/fermarx/imnersion_datos_alura" target="_blank" rel="noopener noreferrer">View Project</a>
+              </p>
+
+              <p class="task-list">
+              <b>Tasks:</b> <br>
+                • Explore a DB and redesign it for a more comfortable use and create a schema of it.<br><br>
+
+                <b>Results:</b><br>
+                •	I learnt things that I did not learn at university.<br><br>
+
+                <b>Languages, Scripting & Frameworks:</b> Python <br>
+                <b>Operating system & Tools:</b> Windows <br>
+                <b>Database:</b> - <br>
+                <b>Working methodology:</b> - <br><br>
+              </p>
+            </div>
+
+            <div class="project pTOTAL all ds">
+              <h3>Python TOTAL</h3>
+              <p><b>Context: Courses I took for getting better at the python langiage. It was an UDEMY course so if I had any question I could ask in the ocmments of each lecture.</b> <br>
+              <b>Project's Description: We touched topics such as web scraping, create a voice assistant or a face recognition. The last part was fully center in data science. </b>
+              <a href="https://github.com/fermarx/Python-course" target="_blank" rel="noopener noreferrer">View Project</a>
+              </p>
+
+              <p class="task-list">
+              <b>Tasks:</b> <br>
+                • Learn how to develop games using Python <br>
+                • Create graphical user interfaces (GUIs) using Python libraries like Tkinter and PyQT <br>
+                • Extract data from websites using Python libraries like BeautifulSoup and Scrapy <br>
+                • Learn about various AI techniques such as machine learning, natural language processing, and computer vision <br>
+                • Develop web applications using Python frameworks like Flask and Django <br>
+                • Use Python for data analysis and visualization using libraries like NumPy, Pandas, and Matplotlib <br>
+                • Recognize faces in images and videos using Python libraries like OpenCV and face_recognition  <br>
+                • Learn about various machine learning techniques such as linear regression, logistic regression, and decision trees. <br><br>
+
+                <b>Results:</b><br>
+                • Master professional Python programming <br>
+                • Create robust, advanced, and useful programs <br>
+                • Work on real-world programs every day <br>
+                • Apply Python in various applications such as games, AI, web development, data science, and more <br>
+                • Understand object-oriented programming (OOP) <br>
+                • Learn complex topics with clarity <br>
+                • Complete a project at the end of each section using the concepts learned<br><br>
+
+                <b>Languages, Scripting & Frameworks:</b> Python <br>
+                <b>Operating system & Tools:</b> Windows <br>
+                <b>Database:</b> - <br>
+                <b>Working methodology:</b> - <br><br>
+              </p>
+            </div>
+
+            <div class="project ex all _">
+              <h3> Example </h3>
+              <p><b>Context:</b> <br>
+              <b>Project's Description:</b>
+              <a href="_" target="_blank" rel="noopener noreferrer">View Project</a>
+              </p>
+
+              <p class="task-list">
+              <b>Tasks:</b> <br>
+                • <br><br>
+
+                <b>Results:</b><br>
+                •	<br><br>
+
+                <b>Languages, Scripting & Frameworks:</b> - <br>
+                <b>Operating system & Tools:</b> - <br>
+                <b>Database:</b> - <br>
+                <b>Working methodology:</b> - <br><br>
+              </p>
             </div>
 
       </div>
-      <div id="high" class="category high" style="display:none">
-				
+
+      <div id="high" class="category high" style="display:none">				
 			</div>
-			<div id="db" class="category db" style="display:none">
-				
+
+			<div id="db" class="category db" style="display:none">	
 			</div>
-			<div id="network" class="category network" style="display:none">
-				
+
+			<div id="network" class="category network" style="display:none">	
 			</div>
     </div>
+
+    <!--Contact me-->
     <div id="contact" class="content">
       <h2>Contact Me</h2>
-	  <ul>
-		<li>Email: sofiaxiaofan@mail.com</li>
-    LinkedIn: <a href="https://linkedin.com/in/xiao-fernandez" target="_blank" rel="noopener noreferrer">Press Here</a>
-	</ul>
+      <ul>
+        <p>You can reach me at:</p>
+        <li>Email: sofiaxiaofan@mail.com</li>
+        LinkedIn: <a href="https://linkedin.com/in/xiao-fernandez" target="_blank" rel="noopener noreferrer">Press Here</a>
+      </ul>
     </div>
   </div>
   <script src="main.js"></script>
