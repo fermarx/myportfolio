@@ -2,14 +2,14 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #fffffe;
+  background-color: #84a98c;
+  text-align:justify;
 }
-
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f0d9b1;
+  background-color: #acc17b;
 }
 
 h1 {
@@ -19,8 +19,10 @@ h1 {
 
 h3 {
   text-align: center;
-  background-color: #f0d9b1;
+  background-color: #acc17b;
   margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 ul {
@@ -28,62 +30,22 @@ ul {
   padding: 0;
   list-style: none;
 }
+li {margin: 10px 0;}
 
-li {
-  margin: 10px 0;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-
-/* Navigation menu */
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  }
-  
-  
-nav ul li a {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #b99348;
-  transition: background-color 0.3s;
-}
-
-nav ul li.active a {
-  background-color: #b99348;
-}
 
 /* Tabs */
 .tab {
   display: inline-block;
-  background-color: #e6c988;
+  background-color: #5d946e;
   color: #333;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-bottom: 10px;
-
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.tab:hover {background-color: #fff4e1;}
-.tab.active {background-color: #fff4e1;}
+.tab:hover {background-color: #d4e6b5;}
+.tab.active {background-color: #c4d587;}
 
 .content {
   display: none;
@@ -94,12 +56,11 @@ nav ul li.active a {
 
 
 /* About me tab */
-#about {background-color: #fff4e1;}
+#about {background-color: #d4e6b5;}
 
 /* My projects tab */
-#projects {background-color: #fff4e1;}
+#projects {background-color: #d4e6b5;}
 .project {margin-bottom: 30px;}
-.project h2 {margin-top: 0;}
 .project p {margin-bottom: 10px;}
 .project.all {display: block;}
 .task-list {display: none;}
@@ -107,13 +68,13 @@ nav ul li.active a {
 .project a {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #f0d9b1;
+  background-color: #b1c679;
   color: #000;
   text-decoration: none;
 }
 
 button {
-  background-color: #f0d9b1;
+  background-color: #b1c679;
   border: none;
   border-radius: 50px;
   padding: 10px 20px;
@@ -124,7 +85,7 @@ button {
 .show-more {
   display: block;
   margin-top: 10px;
-  background-color: #f0d9b1;
+  background-color: #b1c679;
   color: #000000;
   border: none;
   padding: 10px;
@@ -133,5 +94,5 @@ button {
 }
 
 /* Contact me tab */
-#contact {background-color: #fff4e1;}
+#contact {background-color: #d4e6b5;}
 
