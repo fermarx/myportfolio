@@ -34,12 +34,12 @@ nav ul li a {
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
-  background-color: #333;
+  background-color: #b99348;
   transition: background-color 0.3s;
 }
 
 nav ul li.active a {
-  background-color: #555;
+  background-color: #b99348;
 }
 
 /* Tabs */
@@ -54,12 +54,12 @@ nav ul li.active a {
 
 /* About me tab */
 #about {
-  background-color: #f2f2f2;
+  background-color: #fff4e1;
 }
 
 /* My projects tab */
 #projects {
-  background-color: #f9f9f9;
+  background-color: #fff4e1;
 }
 
 .project {
@@ -77,14 +77,14 @@ nav ul li.active a {
 .project a {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #333;
+  background-color: #b99348;
   color: #fff;
   text-decoration: none;
 }
 
 /* Contact me tab */
 #contact {
-  background-color: #e6e6e6;
+  background-color: #fff4e1;
 }
 
 .form-control {
@@ -100,7 +100,7 @@ nav ul li.active a {
 
 .form-control:focus {
   outline: none;
-  box-shadow: 0 0 5px #333;
+  box-shadow: 0 0 5px #b99348;
 }
 
 .form-control label {
@@ -110,7 +110,7 @@ nav ul li.active a {
 }
 
 .form-control input[type="submit"] {
-  background-color: #333;
+  background-color: #b99348;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -119,5 +119,5 @@ nav ul li.active a {
 }
 
 .form-control input[type="submit"]:hover {
-  background-color: #555;
+  background-color: #b99348;
 }
