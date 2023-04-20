@@ -10,6 +10,8 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #f0d9b1;
+
 }
 
 h1 {
@@ -79,6 +81,8 @@ nav ul li.active a {
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-bottom: 10px;
+
 }
 .tab:hover {background-color: #fff4e1;}
 .tab.active {background-color: #fff4e1;}
