@@ -97,26 +97,15 @@ nav ul li.active a {
 
 
 /* About me tab */
-#about {
-  background-color: #fff4e1;
-}
+#about {background-color: #fff4e1;}
 
 /* My projects tab */
-#projects {
-  background-color: #fff4e1;
-}
-
-.project {
-  margin-bottom: 30px;
-}
-
-.project h2 {
-  margin-top: 0;
-}
-
-.project p {
-  margin-bottom: 10px;
-}
+#projects {background-color: #fff4e1;}
+.project {margin-bottom: 30px;}
+.project h2 {margin-top: 0;}
+.project p {margin-bottom: 10px;}
+.project.all {display: block;}
+.task-list {display: none;}
 
 .project a {
   display: inline-block;
@@ -124,6 +113,17 @@ nav ul li.active a {
   background-color: #b99348;
   color: #fff;
   text-decoration: none;
+}
+
+.show-more {
+  display: block;
+  margin-top: 10px;
+  background-color: #f0d9b1;
+  color: #000000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Contact me tab */

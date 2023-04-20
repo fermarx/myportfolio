@@ -26,59 +26,115 @@
       <div>
 				<div class="tab" onclick="showCategory('all')">All Projects</div>
 				<div class="tab" onclick="showCategory('high')">Highlights</div>
-				<div class="tab" onclick="showCategory('db')">DB Related</div>
+				<div class="tab" onclick="showCategory('ds')">DS Related</div>
 				<div class="tab" onclick="showCategory('network')">Network Related</div>
 			</div>
-      <div id="all" class="category" style="display:active">
-			  <h2>All Projects</h2>
-        <div class="project">
-          <h3>Bachelor's Final Thesis</h3>
-          <p>This project is driven by a passion for plants and gardening and a desire to find a solution to struggles with keeping plants alive. I started having an Arduino in my house and me not knowing what I could do for my bachelor’s final thesis, so I came up with this project with the goal is to improve the success rate of gardening by accurately monitoring and controlling growing conditions, making it easier for people to grow and care for their plants. 
-          Project's Description: Design and implementation of a personal climate control system for plants using cloud computing and IoT technologies, with the aim of accurately monitoring and controlling the growing conditions of plants in a personal greenhouse.
-          </p>
-          <a href="https://github.com/fermarx/Thesis-TFG" target="_blank" rel="noopener noreferrer">View Project</a>
-        </div>
-        <div class="project">
-          <h3>Computer Software Consultant Student Intern</h3>
-          <p>New Technologies consultant working with BBVA (Spanish Bank). It was 30% work from home. I was working with 2 other people from MS (my project manager and a junior) creating the connection to the API. 
-          From BBVA there were 7 people (from different parts of the project) and there was another person from Deloitte doing QA.
-          Project’s Description: Assisted in the migration of a fraud detection app to the cloud for a Spanish bank. Responsible for connecting to the API of the bank and optimizing the calls creating a class and using pycurl.
-          </p>
-        </div>
+      <div id="all" class="category all" style="display:active">
+
+            <!-- Projects -->
+            <div class="project final-thesis all high">
+              <h3>Bachelor's Final Thesis</h3>
+              <p><b>Context:</b> This project is driven by a passion for plants and gardening and a desire to find a solution to struggles with keeping plants alive. I started having an Arduino in my house and me not knowing what I could do for my bachelor's final thesis, so I came up with this project with the goal is to improve the success rate of gardening by accurately monitoring and controlling growing conditions, making it easier for people to grow and care for their plants. 
+              <br>
+              <b>Project's Description:</b> Design and implementation of a personal climate control system for plants using cloud computing and IoT technologies, with the aim of accurately monitoring and controlling the growing conditions of plants in a personal greenhouse.
+              <a href="https://github.com/fermarx/Thesis-TFG" target="_blank" rel="noopener noreferrer">View Project</a>
+              
+              <p class="task-list">
+                <b>Tasks:</b> <br>
+                 • Conducted research on the use of cloud computing and IoT technologies for personal gardening. <br>
+                 • Designed the architecture of the personal climate control system. <br>
+                 • Programmed the microcontroller (Arduino) to collect data from various sensors and communicate with the cloud platform. <br>
+                 • Conducted experiments to test the system's performance and accuracy. <br>
+                 • Conducted a literature review on the use of technology in agriculture. <br>
+                 • Selected appropriate sensors for monitoring temperature, humidity, soil moisture, and light intensity. <br>
+                 • Programmed the microcontroller to control fans, heaters, and lights based on the collected data. <br>
+                 • Developed an application using Python for the user being able to use the data. <br>
+                 • Wrote a report documenting the design, implementation, and evaluation of the system. <br><br>
+
+                 <b>Results:</b> The personal climate control system successfully monitored and controlled the growing conditions of plants, resulting in improved yields and increased efficiency. The project demonstrated the benefits of using cloud computing and IoT technology for personal gardening, such as cost savings and automation. The project also highlighted the importance of open-source software and low-cost hardware components for cost-effective implementation.<br>
+                 • The system was able to accurately monitor and control the growing conditions of plants, resulting in improved yields and increased efficiency. <br>
+                 • Successfully achieved all goals in designing and implementing the system. <br>
+                 • IoT and cloud computing technologies were employed to enable monitoring and a response mechanism. <br>
+                 • Cost-effective, easy-to-use, and highly functional system created.<br><br>
+
+                 <b>Languages, Scripting & Frameworks:</b> C++, Python, Arduino <br>
+                 <b>Operating system & Tools:</b> Arduino IDE, Azure Portal, MySQL Server <br>
+                 <b>Database:</b> MySQL Server <br>
+                 <b>Working methodology:</b> Kanban <br><br>
+              </p>
+            </div>                
+
+
+            <div class="project internship all pyhton">
+              <h3>Computer Software Consultant Student Intern</h3>
+              <p><b>Context:</b> New Technologies consultant working with BBVA (Spanish Bank). It was 30% work from home. I was working with 2 other people from MS (my project manager and a junior) creating the connection to the API. 
+              From BBVA there were 7 people (from different parts of the project) and there was another person from Deloitte doing QA.
+              <br>
+              <b>Project's Description:</b> Assisted in the migration of a fraud detection app to the cloud for a Spanish bank. Responsible for connecting to the API of the bank and optimizing the calls creating a class and using pycurl.
+              </p>
+              <p class="task-list">
+                <b>Tasks:</b> <br>
+                 • Connecting to the API of the bank. <br>
+                 • Optimizing the calls using pycurl. At first, they asked me to do it in VBA, but I suggested the idea of python, as I had a better knowledge of this language.<br>
+                 • Collaboration with international teams through weekly meetings. <br><br>
+
+                 <b>Results:</b> <br>
+                 • Improved the efficiency and reliability of the API calls, contributing to the successful migration of the fraud detection app to the cloud.<br>
+                 • Communication and collaboration skills by working with a diverse team of professionals from around the world and coordinating our efforts and ensuring that the project was moving forward smoothly. <br><br>
+
+                 <b>Languages, Scripting & Frameworks:</b> Python, pycurl, API Connection <br>
+                 <b>Operating system & Tools:</b> Windows, Linux Terminal <br>
+                 <b>Database:</b> AWS <br>
+                 <b>Working methodology:</b> Agile <br><br>
+              </p>
+              <br>
+            </div>
+
+
+            <div class="project faa all ds">
+              <h3>Fundamentos de Aprendizaje Automatico </h3>
+                <p><b>Context:</b> I learnt about the Fundamentals of Machine Learning. As with every course at my home university (UAM), I had the theoretical and the laboratory part. All the lab part was done by pairs.
+                <br>
+                <b>Project's Description:</b> We studied how different ML algorithms worked on paper and after each class, we had to program some algorithms. Naive Bayes, Nearest Neighbors and k-means, logistic regression and ROC analysis and genetic algorithms are the ones we had to program and compare our results with sklearn, as well as we learnt about linear models and neural networks.
+                <a href="https://github.com/fermarx/UAM-projects/tree/main/FAA" target="_blank" rel="noopener noreferrer">View Project</a>
+                
+                <p class="task-list">
+                  <b>Tasks:</b> : In both cases we worked the 2h/week when we had in class with our professor there and could answer some questions if we had. If we did not finish in those 2h (because of the explanation of the lab or so), we finish the project at our hose, using VSCode and github trying to find a timeslot where both of us could work together, if not, each one would to a bit and then the other would check on the code.<br>
+                   • Elaborating and program in Python different ML algorithms and compare our results with SKLearn. <br><br>
+  
+                   <b>Results:</b> As a result, we passed the projects for each course, as well as each one of the team passed the theoretical part, that was an individual exam.<br>
+                   • Leant data science methods, technologies and algorithms. <br>
+                   • Skills in setting up and configuring data science tools. <br><br>
+  
+                   <b>Languages, Scripting & Frameworks:</b> Python <br>
+                   <b>Operating system & Tools:</b> Windows <br>
+                   <b>Database:</b> - <br>
+                   <b>Working methodology:</b> Agile <br><br>
+                </p>
+              </div>   
+            </div>
+
+            <div class="project appliedDS all network">
+              <h3>Redes Project</h3>
+              <p>Description of Redes project</p>
+            </div>
+
       </div>
-      <div id="high" class="category" style="display:none">
-				<h3>Highlights</h3>
-				<ul>
-        <div class="project">
-          <h3>Bachelor's Final Thesis</h3>
-          <p>This project is driven by a passion for plants and gardening and a desire to find a solution to struggles with keeping plants alive. I started having an Arduino in my house and me not knowing what I could do for my bachelor’s final thesis, so I came up with this project with the goal is to improve the success rate of gardening by accurately monitoring and controlling growing conditions, making it easier for people to grow and care for their plants. 
-          Project's Description: Design and implementation of a personal climate control system for plants using cloud computing and IoT technologies, with the aim of accurately monitoring and controlling the growing conditions of plants in a personal greenhouse.
-          </p>
-          <a href="https://github.com/fermarx/Thesis-TFG" target="_blank" rel="noopener noreferrer">View Project</a>
-        </div>                
-				</ul>
+      <div id="high" class="category high" style="display:none">
+				
 			</div>
-			<div id="db" class="category" style="display:none">
-				<h3>DB Related</h3>
-				<ul>
-					<li>Project 1</li>
-					<li>Project 2</li>
-				</ul>
+			<div id="db" class="category db" style="display:none">
+				
 			</div>
-			<div id="network" class="category" style="display:none">
-				<h3>Network Related</h3>
-				<ul>
-					<li>Project 3</li>
-					<li>Project 4</li>
-					<li>Project 5</li>
-				</ul>
+			<div id="network" class="category network" style="display:none">
+				
 			</div>
     </div>
     <div id="contact" class="content">
       <h2>Contact Me</h2>
 	  <ul>
-		<li>Email: example@mail.com</li>
-		<li>Phone: 123-456-7890</li>
+		<li>Email: sofiaxiaofan@mail.com</li>
+    LinkedIn: <a href="https://linkedin.com/in/xiao-fernandez" target="_blank" rel="noopener noreferrer">Press Here</a>
 	</ul>
     </div>
   </div>
