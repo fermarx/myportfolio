@@ -2,6 +2,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #fffffe;
+
 }
 
 .container {
@@ -15,6 +17,22 @@ h1 {
   margin-bottom: 30px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 10px 0;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
 /* Navigation menu */
 nav ul {
   list-style: none;
@@ -24,11 +42,16 @@ nav ul {
   justify-content: space-between;
 }
 
-nav ul li {
-  flex: 1;
-  text-align: center;
-}
-
+.nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  }
+  
+  
 nav ul li a {
   display: block;
   padding: 10px 20px;
@@ -44,13 +67,34 @@ nav ul li.active a {
 
 /* Tabs */
 .tab {
+  display: inline-block;
+  background-color: #f2d493;
+  color: #333;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab:hover {
+  background-color: #f7e8ae;
+}
+
+.tab.active {
+  background-color: #f7e8ae;
+}
+
+.content {
   display: none;
   padding: 20px;
 }
 
-.tab.active {
+.content.active {
   display: block;
 }
+.category {
+  padding-left: 20px;
+}
+
 
 /* About me tab */
 #about {
@@ -87,37 +131,3 @@ nav ul li.active a {
   background-color: #fff4e1;
 }
 
-.form-control {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-.form-control:focus {
-  outline: none;
-  box-shadow: 0 0 5px #b99348;
-}
-
-.form-control label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.form-control input[type="submit"] {
-  background-color: #b99348;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.form-control input[type="submit"]:hover {
-  background-color: #b99348;
-}

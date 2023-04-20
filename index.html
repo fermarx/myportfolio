@@ -8,14 +8,12 @@
 <body>
   <div class="container">
     <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li class="active"><a href="#about">About Me</a></li>
-        <li><a href="#projects">My Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
-    <div id="about" class="tab active">
+		<div>
+			<div class="tab" onclick="showTab('about')">About Me</div>
+			<div class="tab" onclick="showTab('projects')">My Projects</div>
+			<div class="tab" onclick="showTab('contact')">Contact Me</div>
+		</div>
+    <div id="about" class="content active">
       <h2>About Me</h2>
       <p>Hello, my name is Xiao Fernandez and I am a recent graduate in Computer Science. I am passionate about programming and love to work on challenging projects that test my skills.
       As a recent Computer Science graduate, I possess a strong passion for technology and problem-solving skills that make me an excellent candidate for a challenging and dynamic role. 
@@ -24,24 +22,59 @@
 		  My Bachelor's final thesis project involved utilizing my skills and knowledge to contribute to projects that can make a positive impact. I am eager to begin my career and bring my knowledge and enthusiasm to a company that values innovation, collaboration, and growth.
       </p>
     </div>
-    <div id="projects" class="tab">
-      <h2>My Projects</h2>
-      <div class="project">
-        <h3>Bachelor's Final Thesis</h3>
-        <p>This project is driven by a passion for plants and gardening and a desire to find a solution to struggles with keeping plants alive. I started having an Arduino in my house and me not knowing what I could do for my bachelor’s final thesis, so I came up with this project with the goal is to improve the success rate of gardening by accurately monitoring and controlling growing conditions, making it easier for people to grow and care for their plants. 
-		    Project's Description: Design and implementation of a personal climate control system for plants using cloud computing and IoT technologies, with the aim of accurately monitoring and controlling the growing conditions of plants in a personal greenhouse.
-		    </p>
-    		<a href="https://github.com/fermarx/Thesis-TFG" target="_blank" rel="noopener noreferrer">View Project</a>
+    <div id="projects" class="content">
+      <div>
+				<div class="tab" onclick="showCategory('all')">All Projects</div>
+				<div class="tab" onclick="showCategory('high')">Highlights</div>
+				<div class="tab" onclick="showCategory('db')">DB Related</div>
+				<div class="tab" onclick="showCategory('network')">Network Related</div>
+			</div>
+      <div id="all" class="category" style="display:active">
+			  <h2>All Projects</h2>
+        <div class="project">
+          <h3>Bachelor's Final Thesis</h3>
+          <p>This project is driven by a passion for plants and gardening and a desire to find a solution to struggles with keeping plants alive. I started having an Arduino in my house and me not knowing what I could do for my bachelor’s final thesis, so I came up with this project with the goal is to improve the success rate of gardening by accurately monitoring and controlling growing conditions, making it easier for people to grow and care for their plants. 
+          Project's Description: Design and implementation of a personal climate control system for plants using cloud computing and IoT technologies, with the aim of accurately monitoring and controlling the growing conditions of plants in a personal greenhouse.
+          </p>
+          <a href="https://github.com/fermarx/Thesis-TFG" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Computer Software Consultant Student Intern</h3>
+          <p>New Technologies consultant working with BBVA (Spanish Bank). It was 30% work from home. I was working with 2 other people from MS (my project manager and a junior) creating the connection to the API. 
+          From BBVA there were 7 people (from different parts of the project) and there was another person from Deloitte doing QA.
+          Project’s Description: Assisted in the migration of a fraud detection app to the cloud for a Spanish bank. Responsible for connecting to the API of the bank and optimizing the calls creating a class and using pycurl.
+          </p>
+        </div>
       </div>
-      <div class="project">
-        <h3>Computer Software Consultant Student Intern</h3>
-        <p>New Technologies consultant working with BBVA (Spanish Bank). It was 30% work from home. I was working with 2 other people from MS (my project manager and a junior) creating the connection to the API. 
-        From BBVA there were 7 people (from different parts of the project) and there was another person from Deloitte doing QA.
-        Project’s Description: Assisted in the migration of a fraud detection app to the cloud for a Spanish bank. Responsible for connecting to the API of the bank and optimizing the calls creating a class and using pycurl.
-        </p>
-      </div>
+      <div id="high" class="category" style="display:none">
+				<h3>Highlights</h3>
+				<ul>
+        <div class="project">
+          <h3>Bachelor's Final Thesis</h3>
+          <p>This project is driven by a passion for plants and gardening and a desire to find a solution to struggles with keeping plants alive. I started having an Arduino in my house and me not knowing what I could do for my bachelor’s final thesis, so I came up with this project with the goal is to improve the success rate of gardening by accurately monitoring and controlling growing conditions, making it easier for people to grow and care for their plants. 
+          Project's Description: Design and implementation of a personal climate control system for plants using cloud computing and IoT technologies, with the aim of accurately monitoring and controlling the growing conditions of plants in a personal greenhouse.
+          </p>
+          <a href="https://github.com/fermarx/Thesis-TFG" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>                
+				</ul>
+			</div>
+			<div id="db" class="category" style="display:none">
+				<h3>DB Related</h3>
+				<ul>
+					<li>Project 1</li>
+					<li>Project 2</li>
+				</ul>
+			</div>
+			<div id="network" class="category" style="display:none">
+				<h3>Network Related</h3>
+				<ul>
+					<li>Project 3</li>
+					<li>Project 4</li>
+					<li>Project 5</li>
+				</ul>
+			</div>
     </div>
-    <div id="contact" class="tab">
+    <div id="contact" class="content">
       <h2>Contact Me</h2>
 	  <ul>
 		<li>Email: example@mail.com</li>

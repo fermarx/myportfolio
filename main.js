@@ -1,28 +1,26 @@
-// Get all the tabs
-const tabs = document.querySelectorAll('.tab');
-
-// Get all the navigation menu items
-const menuItems = document.querySelectorAll('nav ul li');
-
-// Add event listeners to the navigation menu items
-menuItems.forEach((menuItem) => {
-  menuItem.addEventListener('click', () => {
-    // Remove the active class from all navigation menu items
-    menuItems.forEach((item) => {
-      item.classList.remove('active');
-    });
-
-    // Add the active class to the clicked navigation menu item
-    menuItem.classList.add('active');
-
-    // Hide all tabs
-    tabs.forEach((tab) => {
-      tab.classList.remove('active');
-    });
-
-    // Show the corresponding tab
-    const tabId = menuItem.querySelector('a').getAttribute('href');
-    const tab = document.querySelector(tabId);
-    tab.classList.add('active');
-  });
-});
+function showTab(tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tab");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  event.currentTarget.className += " active";
+}
+function showCategory(categoryName) {
+  var i, categorycontent, categorylinks;
+  categorycontent = document.getElementsByClassName("category");
+  for (i = 0; i < categorycontent.length; i++) {
+    categorycontent[i].style.display = "none";
+  }
+  categorylinks = document.getElementsByClassName("tab");
+  for (i = 0; i < categorylinks.length; i++) {
+    categorylinks[i].className = categorylinks[i].className.replace(" active", "");
+  }
+  document.getElementById(categoryName).style.display = "block";
+  event.currentTarget.className += " active";
+}
