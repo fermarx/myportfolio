@@ -102,8 +102,16 @@ button {
   margin-right: 15px;
   font-size: 1.2em;
 }
-.contact li a svg {margin-right: 5px;}
-.contact li a.linkedin svg {color: #0077b5;}
-.contact li a.github svg {color: #333;}
-.contact li a.download svg {color: #333;}
-.contact li a:hover svg {transform: scale(1.2);}
+.social-icon {
+  display: inline-block;
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 10px; /* Add some spacing between icons */
+}
+
+.social-icon svg {
+  width: 100%;
+  height: 100%;
+}
