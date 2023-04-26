@@ -96,3 +96,14 @@ button {
 /* Contact me tab */
 #contact {background-color: #d4e6b5;}
 
+.contact li a {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+.contact li a svg {margin-right: 5px;}
+.contact li a.linkedin svg {color: #0077b5;}
+.contact li a.github svg {color: #333;}
+.contact li a.download svg {color: #333;}
+.contact li a:hover svg {transform: scale(1.2);}

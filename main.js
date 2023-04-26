@@ -60,3 +60,33 @@ function addShowMoreButton() {
   }
 }
 addShowMoreButton();
+
+// Send email function
+function sendEmail() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  const subject = `New message from ${name}`;
+
+  const emailBody = `Name: ${name} <br>Email: ${email} <br>Message: ${message}`;
+
+  window.location.href = `mailto:sofiaxiaofan@gmail.com?subject=${subject}&body=${emailBody}`;
+}
+
+// Show/hide CV download link
+const cvDownload = document.getElementById('cv-download');
+const cvLink = document.getElementById('cv-link');
+
+cvLink.addEventListener('mouseover', function() {
+  cvDownload.style.visibility = 'visible';
+});
+
+cvLink.addEventListener('mouseout', function() {
+  cvDownload.style.visibility = 'hidden';
+});
+
+// Smooth scroll to anchor links
+const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 500,
+  speedAsDuration: true
+});
