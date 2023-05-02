@@ -67,7 +67,9 @@
         <div class="tab" onclick="showCategory('teams')">Team Based</div>        
         <div class="tab" onclick="showCategory('web')">Web development</div>        
         <div class="tab" onclick="showCategory('basic')">CS Basics</div>        
+        <div class="tab" onclick="showCategory('cc')">Cloud Computing</div>        
 			</div>
+      
 
       <div id="all" class="category all" style="display:active">
         <div style="background-color: #84a98c;
@@ -122,7 +124,7 @@
           </p>
         </div>
 
-        <div class="project final-thesis all high db">
+        <div class="project final-thesis all high db cc">
           <h3>Bachelor's Final Thesis</h3>
           <p><b>Context:</b> This project is driven by a passion for plants and gardening and a desire to find a solution to struggles with keeping plants alive. I started having an Arduino in my house and me not knowing what I could do for my bachelor's final thesis, so I came up with this project with the goal is to improve the success rate of gardening by accurately monitoring and controlling growing conditions, making it easier for people to grow and care for their plants.<br>
           <b>Project's Description:</b> Design and implementation of a personal climate control system for plants using cloud computing and IoT technologies, with the aim of accurately monitoring and controlling the growing conditions of plants in a personal greenhouse.
@@ -154,7 +156,7 @@
           </p>
         </div>                
 
-        <div class="project internship all">
+        <div class="project internship all cc">
           <h3>New Technologies Consultant Intern</h3>
           <p><b>Context:</b> New Technologies consultant working with BBVA (Spanish Bank). It was 30% work from home. I was working with 2 other people from MS (my project manager and a junior) creating the connection to the API. 
           From BBVA there were 7 people (from different parts of the project) and there was another person from Deloitte doing QA.<br>
@@ -305,7 +307,7 @@
           </p>
         </div>
 
-        <div class="project iac all db teams">
+        <div class="project iac all db teams cc">
           <h3> Infrastructure as Code </h3>
           <p><b>Context:</b>  The infrastructure as code (IaC) course was taken at the NTNU, where it was an individual lab. <br>
           <b>Project's Description:</b> Theoretical and practical knowledge about Infrastructure Definition Tools / Orchestration, Server Configuration Tools, Workflow and Patterns for Provisioning and Updating Servers, CI/CD, General Infrastructures Services. In the practical part, we had to create a server in skyHiGh using openstack.
@@ -314,9 +316,15 @@
 
           <p class="task-list">
           <b>Tasks:</b> <br>
-            • Create in the server different resources using puppet.<br><br>
+            • Configured an OpenStack environment with a router, network, and Ubuntu server to allow SSH access from hosts on the NTNUNetwork.<br>
+            • Launched instances with different server configurations and security groups in the OpenStack environment.<br>
+            • Worked with Puppet to automate the installation and configuration of software, installing packages, creating classes, and storing parameters in Hiera.<br>
+            • Created a new Neutron network, router, and deployed two servers in it, each with a floating IP address.<br>
+            • Created roles and profiles to manage the environment effectively.<br><br>
 
             <b>Results:</b><br>
+            • Functional OpenStack environment that can be used to deploy and manage virtual machines. <br>
+            • Automation scripts that can be used to manage the environment more efficiently. <br>
             • Know how infrastructures can be managed as code with software engineering principles, a professional system administration workflow and have knowledge of cross platform system administration with widely used tools and services. <br><br>
 
             <b>Languages, Scripting & Frameworks:</b> Puppet, OpenStack <br>
